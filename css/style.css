@@ -1,0 +1,109 @@
+body {
+	width: 700px;
+	margin: 0 auto;
+	background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8EA9C1), to(#B3E6FF));
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+fieldset {
+	border: 4px inset rgb(51, 121, 117);
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+input, textarea, select {
+	border: 2px solid rgb(100, 141, 141);
+	border-radius: 5px;
+	resize: none;
+	outline:none;
+	padding: 5px;
+	background-color: rgb(226, 226, 226);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input:focus, textarea:focus, select:focus {
+	background-color: #fff;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+ legend {
+	font-weight: bold;
+	font-size: 22px;
+}
+.category {
+	display: block;
+	font-style: italic;
+	font-weight: normal;
+}
+.about {
+	font: bold 20px 'Times new roman', sans-serif;
+}
+
+.date {
+	width: 169px;
+}
+
+.checkbox li, .books li, .difficult li {
+	margin-bottom: 0;
+}
+
+.comment {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.submit {
+	padding: 3px 15px;
+	margin: 20px 0;
+	cursor: pointer;
+	display: flex;
+	justify-content: end;
+}
+
+.submit:hover {
+	background-color: rgb(196, 192, 192);
+}
+
+input:invalid + .required:after{
+	color: red;
+	content: "\2718";
+	padding-left: 5px;
+}
+input:valid + .required:after{
+	color: green;
+	content: "\2714";
+	padding-left: 5px;
+}
+
+.done-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;	
+}
+
+.done-wrapper h1 {
+	font-size: 40px;
+	color: rgb(0, 53, 53);
+	
+}
+
+.done-wrapper a {
+	padding: 20px 100px;
+	border: 2px solid rgb(0, 53, 53);
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(0, 53, 53);
+}
+
+.done-wrapper a:hover {
+	background-color: rgb(143, 180, 255);
+}
